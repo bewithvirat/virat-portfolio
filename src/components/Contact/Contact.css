@@ -1,0 +1,362 @@
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px; /* Tighter layout */
+    margin: 70px 100px; /* Adjusted margins */
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Align sections to equal height */
+    gap: 120px; /* Reduced gap */
+    height: 100%; /* Set full height */
+}
+
+.section-left,
+.con-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Equal width for both sections */
+  margin-top: 25px;
+}
+
+.section-left {
+    gap: 20px; /* Reduced gap */
+    max-width: 650px; /* Consistent max-width */
+}
+
+.section-left h1 {
+    font-size: 80px; /* Maintained larger font size */
+    font-weight: 700;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-left p {
+    color: white;
+    font-size: 20px; /* Clear and readable font size */
+    line-height: 30px;
+    max-width: 500px; /* Controlled text width */
+    flex-grow: 1; /* Expand to fill available space */
+}
+
+.cont-title {
+    position: relative; 
+    
+}
+
+.cont-title h1{
+    font-size:100px;
+   
+}
+.cont-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1; /* Ensure the image stays behind content */
+}
+
+.cont-details {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    color: white;
+    font-size: 20px;
+    flex-grow: 1;
+margin-bottom:65px;
+   
+}
+
+.cont-detail {
+    display: flex;
+    align-items: center;
+  
+    margin-top:2px;
+    flex-grow: 1; /* Ensure consistent height for each row */
+}
+.cont-details img p{
+line-height:23px;
+
+    gap:20px;
+}
+.con-right {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; /* Evenly distribute content */
+    gap: 12px;
+    max-width: 600px; /* Same max-width as section-left */
+}
+
+.con-right label {
+    color: #d8d8d8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.con-right input,
+.con-right textarea {
+    border: none;
+    width: 100%; /* Full-width input */
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0a0a0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.con-right input {
+    height: 80px; /* Maintained larger input height */
+}
+
+.con-right textarea {
+    height: 180px; /* Consistent textarea height */
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 40px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.9%);
+    font-size: 22px;
+    padding: 20px 50px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px; /* Tighter layout */
+    margin: 70px 100px; /* Adjusted margins */
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Align sections to equal height */
+    gap: 120px; /* Reduced gap */
+    height: 100%; /* Set full height */
+}
+
+.section-left,
+.con-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Equal width for both sections */
+}
+
+.section-left {
+    gap: 20px; /* Reduced gap */
+    max-width: 650px; /* Consistent max-width */
+    text-align: center; /* Center the text */
+}
+
+.section-left h1 {
+    font-size: 80px; /* Maintained larger font size */
+    font-weight: 700;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-left p {
+    color: white;
+    font-size: 20px; /* Clear and readable font size */
+    line-height: 30px;
+    max-width: 500px; /* Controlled text width */
+    flex-grow: 1; /* Expand to fill available space */
+}
+
+.cont-title {
+    position: relative; 
+    text-align: center; /* Center-align the title */
+}
+
+.cont-title h1 {
+    font-size: 100px; /* Maintain large font size */
+    position: relative; /* For z-index positioning */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.cont-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0; /* Ensure the image is behind the text */
+}
+
+.cont-details {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    flex-grow: 1;
+    margin-bottom: 65px;
+}
+
+.cont-detail {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    flex-grow: 1; /* Ensure consistent height for each row */
+}
+
+.con-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; /* Evenly distribute content */
+    gap: 12px;
+    max-width: 600px; /* Same max-width as section-left */
+}
+
+.con-right label {
+    color: #d8d8d8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.con-right input,
+.con-right textarea {
+    border: none;
+    width: 100%; /* Full-width input */
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0a0a0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.con-right input {
+    height: 80px; /* Maintained larger input height */
+}
+
+.con-right textarea {
+    height: 180px; /* Consistent textarea height */
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 40px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.9%);
+    font-size: 22px;
+    padding: 20px 50px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .con {
+        margin: 30px 15px; /* Adjusted margin for better spacing */
+        gap: 35px; /* Adjusted gap for more space between sections */
+    }
+
+    .section {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center-align items */
+        gap: 40px; /* Consistent gap for spacing */
+        width: 100%; /* Ensure full width for sections */
+    }
+  
+   
+    
+    .section-left,
+    .con-right {
+        max-width: 100%; /* Full width for sections */
+        flex: none; /* Remove flex properties */
+    }
+
+    .section-left h1 {
+        font-size: 42px; /* Slightly larger font size for headings */
+        line-height: 50px; /* Adjust line height for better readability */
+        text-align: center; /* Center-align heading */
+    }
+
+    .section-left p {
+        font-size: 18px; /* Slightly larger font size for readability */
+        line-height: 26px; /* Adjust line height */
+        text-align: center; /* Center-align text for better layout */
+    }
+
+    .cont-title h1 {
+        font-size: 45px; /* Adjusted title font size */
+    }
+
+    .cont-title img {
+        display: block; /* Ensure image is visible */
+        width: 100%; /* Full width image for better layout */
+        height: auto; /* Maintain aspect ratio */
+        position: absolute; /* Position image behind the text */
+        z-index: 0; /* Keep image behind the content */
+        top: 0;
+        left: 0;
+        opacity: 0.3; /* Slight opacity for the background image */
+    }
+
+    .cont-details {
+        flex-direction: column; /* Stack details vertically */
+        align-items: center; /* Center the content */
+        gap: 15px; /* Adjust gap between details */
+    }
+
+    .cont-detail {
+        justify-content: center; /* Center contact details */
+        text-align: center; /* Center the text */
+    }
+
+    .con-right {
+        width: 85%; /* Full width for the form but slightly reduced for balance */
+        margin-left: 60px; /* Align the form slightly left */
+        align-items: center; 
+    }
+
+    .con-right label {
+        font-size: 20px; /* Slightly larger font for labels */
+        text-align: center; /* Center-align text */
+    }
+
+    .con-right input,
+    .con-right textarea {
+        font-size: 18px; /* Input font size */
+        padding: 12px; /* Padding for the input fields */
+        width: 60%; /* Full width inputs */
+    }
+
+    .contact-submit {
+        padding: 15px 25px; /* Button padding */
+        font-size: 18px; /* Button font size */
+        margin-top: 20px; /* Space above button */
+        width: 40%; /* Full width button for consistency */
+    }
+}

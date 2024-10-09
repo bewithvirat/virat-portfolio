@@ -1,0 +1,298 @@
+/* Existing Styles */
+.top-left > img {
+    height: 45px;
+    width: 80px;
+    border-radius: 20%;
+    object-fit: cover;
+    background-color: black;
+}
+
+.footer {
+    margin: 50px 70px;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    gap: 260px;
+}
+.footer-bottom-right{
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.footer-bottom-left{
+    text-align: center;
+   margin-bottom: 23px;
+}
+.top-left {
+    font-size: 18px;
+    max-width: 350px;
+    margin-bottom: 45px;
+}
+
+.footer-top-ryt {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.footer-email {
+    display: flex;
+    gap: 25px;
+    border-radius: 50px;
+    padding: 18px 10px;
+    background: #32323c;
+    padding-right: 80px;
+    margin-top: 30px;
+}
+
+.footer-email input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #3bde97;
+    font-family: outfit;
+    font-size: 18px;
+}
+
+.subscribe {
+    font-size: 20px;
+    padding: 20px 45px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(44, 44, 232) 35%, rgb(241, 77, 12) 55%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.subscribe:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, rgb(241, 77, 12) 35%, rgb(44, 44, 232) 55%);
+    transition: 0.3s;
+}
+/* Success Popup */
+.popup {
+    position: fixed;
+    top: 45%; /* Center vertically */
+    left: 62%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfectly center the popup */
+    background: #28a745;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Error Popup */
+.error-popup {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfectly center the popup */
+    background: #dc3545; /* Red background for error */
+    color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center; /* Ensure text is centered */
+}
+
+.error-content p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Animation for the popups */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%); /* Slightly higher than center during animation */
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%); /* Perfect center after animation */
+    }
+}
+
+  .footer-email-container {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Allows the error message to position correctly */
+  }
+  
+  .footer-top-ryt {
+    display: flex;
+    align-items: center; /* Align email and button horizontally */
+    gap: 35px; /* Space between email and subscribe button */
+  }
+  
+  .footer-email {
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    padding: 18px 10px;
+    background: #32323c;
+    padding-right: 80px;
+    margin-top: 10px; /* Adjust margin for spacing */
+    transition: all 0.3s ease; /* Smooth transition for error */
+    position: relative;
+  }
+  
+  .footer-email.error {
+    border: 2px solid red; /* Red border for error state */
+  }
+  
+  .footer-email.shake {
+    animation: shake 0.5s; /* Shake animation */
+  }
+  
+  .footer-email input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #3bde97;
+    font-family: outfit;
+    font-size: 18px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: absolute;
+    top: -15px; /* Positioned above the email input */
+    left: 32px;
+  }
+  
+  /* Subscribe Button */
+  .subscribe {
+    font-size: 20px;
+    padding: 20px 25px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, rgb(44, 44, 232) 35%, rgb(241, 77, 12) 55%);
+    cursor: pointer;
+    margin-left: 33px;
+    transition: 0.3s;
+    margin-top: 10px; /* Ensures it's aligned vertically with the email input */
+  }
+  
+  .subscribe:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  /* Shake animation */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); } /* Slight left */
+    50% { transform: translateX(3px); }  /* Slight right */
+    75% { transform: translateX(-3px); } /* Slight left */
+    100% { transform: translateX(0); }    /* Return to original position */
+  }
+  
+  @media (max-width: 768px) { 
+    .footer {
+        margin: 20px 10px;
+        gap: 20px;
+    }
+    .popup{
+        transform: translate(-50%, -50%); /* Perfectly center the popup */
+        background: #28a745;
+        color: white;
+        border-radius: 10px;
+        padding: 15px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        animation: fadeIn 0.5s ease-in-out;
+        top: 40%; /* Center vertically */
+        left: 53%;
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .top-left {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .top-left > img {
+        height: 35px;
+        width: 60px;
+    }
+
+    .footer-top-ryt {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-email {
+        width: 100%;
+        padding: 15px 10px;
+        justify-content: center;
+        padding-right: 15px;
+    }
+
+    .footer-email input {
+        font-size: 16px;
+        width: 100%;
+        border: none;
+        background: transparent;
+        color: #3bde97;
+        outline: none;
+    }
+
+    .subscribe {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+        background: linear-gradient(135deg, rgb(44, 44, 232) 35%, rgb(241, 77, 12) 55%);
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .subscribe:hover {
+        transform: scale(1.1);
+        background: linear-gradient(135deg, rgb(241, 77, 12) 35%, rgb(44, 44, 232) 55%);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer-bootom-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+  
+}
