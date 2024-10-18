@@ -2,6 +2,7 @@ import React from 'react';
 import './virat.css';
 import profile_img from '../../assets/profile_img.jpeg';
 import AnchorLink from 'react-anchor-link-smooth-scroll'; 
+import resume from '../../assets/resume.pdf';
 
 const Virat = () => {
   return (
@@ -11,14 +12,14 @@ const Virat = () => {
       <p>I am a Frontend Developer and this is a Demo Project using React.</p>
       <div className="virat-action">
         <div className="virat-connect">
-          <AnchorLink className="anchor-link" offset={50} href='#contact'> Connect With Me</AnchorLink>
+          <AnchorLink className="anchor-link" offset={50} href='#contact'>Connect With Me</AnchorLink>
         </div>
         <div className="virat-resume">
-          My Resume
+          <a href={resume} download className="resume-link">My Resume</a>
         </div>
       </div>
     </div>
   );
-  }
+}
 
 export default Virat;
